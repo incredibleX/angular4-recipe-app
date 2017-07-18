@@ -1,0 +1,6 @@
+<p *ngIf="recipe; else nothing">
+  recipe-edit for {{recipe.getName()}} works!
+</p>
+<ng-template #nothing>
+  <p>New Recipe Works!</p>
+</ng-template>

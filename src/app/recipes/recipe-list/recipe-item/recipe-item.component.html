@@ -1,0 +1,13 @@
+<a [routerLink]="['view', recipe.getId()]" class="list-group-item clearfix" routerLinkActive="active">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ recipe.getName() }}</h4>
+    <p class="list-group-item-text">{{ recipe.getDesc() }}</p>
+  </div>
+  <span class="pull-right">
+        <img
+          [src]="recipe.getImageUrl()"
+          alt="{{recipe.getName()}}"
+          class="img-responsive"
+          style="max-width: 50px;">
+      </span>
+</a>
